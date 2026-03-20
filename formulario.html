@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeria la perla </title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:lightblue;
+}
+
+header{
+    background-image: url("fondo.jpeg"); 
+    background-size:cover; 
+    background-position: center; 
+    color:black;
+    text-align:center; 
+    padding:50px 40px; 
+    font-family: comic sans MS;
+}
+
+header h1{
+    font-size:45px;
+    letter-spacing:2px;
+}
+nav{ 
+    background-color:darkblue; 
+    text-align:left; 
+}
+
+nav a{ 
+    color:white; 
+    text-decoration:none; 
+    padding:15px; 
+    display:inline-block; 
+}
+
+nav a:hover{ 
+    background-color:purple; 
+    color:black; 
+}
+
+.dropdown{ 
+    display:inline-block;
+    position:relative; 
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute; 
+    background-color:red; 
+}
+
+.dropdown-content a{ 
+    display:block; 
+}
+
+.dropdown:hover .dropdown-content{ 
+    display:block; 
+}
+
+.contenedor{ 
+    display:flex; 
+    padding:20px; 
+    flex-wrap: wrap;
+}
+
+main{ 
+    width:70%; 
+}
+
+aside{ 
+    width:30%; 
+    text-align:center; 
+}
+
+aside img{ 
+    width:120px; 
+    height:120px; 
+    border-radius:50%; 
+    display:block; 
+    margin:15px auto; 
+}
+
+footer{ 
+    background-color:black;
+    color:white;
+    text-align:center; 
+    padding:15px; 
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    main, aside{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+<header> 
+    <h1>Joyeria La Perla</h1> 
+    <h3>Joyeria de buena calidad</h3> 
+</header>
+<nav> 
+    <a href="index.html">volver</a>
+    <a href="relojes.html">relojes</a> 
+    <a href="collares.html">collares</a>
+
+    <div class="dropdown"> 
+        <a href="#">Anillos</a> 
+        <div class="dropdown-content"> 
+            <a href="oro.html">oro</a> 
+            <a href="plata.html">plata</a> 
+            <a href="acero.html">Acero inoxidable</a> 
+            <a href="platino.html">platino</a> 
+            <a href="titanio.html">titanio</a> 
+        </div>
+    </div>
+
+    <a href="pulseras.html">pulseras</a> 
+
+    <a href="aretes.html">Aretes</a>
+
+    <a href="acerca.html">Acerca de</a> 
+
+    <a href="galeria.html">Galeria</a> 
+
+</nav>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h2>Formulario de contacto</h2>
+
+    <form>
+        <!-- Campo de nombre -->
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <!-- Campo de correo -->
+        <label>Correo:</label><br>
+        <input type="email" name="correo"><br><br>
+
+        <!-- Campo de mensaje -->
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje"></textarea><br><br>
+
+        <!-- Botón -->
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+ 
+</body>
+</html>

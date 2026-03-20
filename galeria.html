@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeria la perla </title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:lightblue;
+}
+
+header{
+    background-image: url("fondo.jpeg"); 
+    background-size:cover; 
+    background-position: center; 
+    color:black;
+    text-align:center; 
+    padding:50px 40px; 
+    font-family: comic sans MS;
+}
+
+header h1{
+    font-size:45px;
+}
+
+nav{ 
+    background-color:darkblue; 
+}
+
+nav a{ 
+    color:white; 
+    text-decoration:none; 
+    padding:15px; 
+    display:inline-block; 
+}
+
+nav a:hover{ 
+    background-color:purple; 
+    color:black; 
+}
+
+
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap:15px;
+    padding:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+footer{ 
+    background-color:black;
+    color:white;
+    text-align:center; 
+    padding:15px; 
+}
+</style>
+</head>
+
+<body>
+
+<header> 
+    <h1>Joyeria La Perla</h1> 
+    <h3>Joyeria de buena calidad</h3> 
+</header>
+
+<nav> 
+    <a href="index.html">volver</a> 
+    <a href="relojes.html">relojes</a> 
+    <a href="collares.html">collares</a>
+    <a href="pulseras.html">pulseras</a> 
+    <a href="aretes.html">Aretes</a>
+    <a href="acerca.html">Acerca de</a> 
+    <a href="formulario.html">Formulario</a> 
+</nav>
+
+<h2 style="text-align:center;">Galería</h2>
+
+<div class="galeria">
+
+    <img src="a1.jpeg">
+    <img src="a2.jpeg">
+    <img src="a3.jpeg">
+    <img src="a4.jpeg">
+    <img src="p1.jpeg">
+    <img src="p2.jpeg">
+    <img src="p3.jpeg">
+    <img src="p4.jpeg">
+    <img src="o1.jpeg">
+    <img src="o2.jpeg">
+    <img src="o3.jpeg">
+    <img src="o4.jpeg">
+    <img src="pl1.jpeg">
+    <img src="pl2.jpeg">
+    <img src="pl2.jpeg">
+    <img src="pl3.jpeg">
+    <img src="pl4.jpeg">
+    <img src="t1.jpeg">
+    <img src="t2.jpeg">
+    <img src="t3.jpeg">
+    <img src="t4.jpeg">
+    <img src="c1.jpeg">
+    <img src="c2.jpeg">
+    <img src="c3.jpeg">
+    <img src="c4.jpeg">
+    <img src="ar1.jpeg">
+    <img src="ar2.jpeg">
+    <img src="ar3.jpeg">
+    <img src="ar4.jpeg">
+    <img src="fondo aretes.jpeg">
+
+</div>
+
+<footer> 
+    <p>Gracias por visitar la galería</p>
+</footer>
+
+</body>
+</html>

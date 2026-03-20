@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>collares</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:lightblue;
+}
+
+header{
+    background-image: url("fondo cadena.jpeg"); 
+    background-size:cover; 
+    background-position: center; 
+    color:black;
+    text-align:center; 
+    padding:50px 40px; 
+    font-family: comic sans MS;
+}
+
+header h1{
+    font-size:45px;
+    letter-spacing:2px;
+}
+nav{ 
+    background-color:darkblue; 
+    text-align:left; 
+}
+
+nav a{ 
+    color:white; 
+    text-decoration:none; 
+    padding:15px; 
+    display:inline-block; 
+}
+
+nav a:hover{ 
+    background-color:purple; 
+    color:black; 
+}
+
+.dropdown{ 
+    display:inline-block;
+    position:relative; 
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute; 
+    background-color:red; 
+}
+
+.dropdown-content a{ 
+    display:block; 
+}
+
+.dropdown:hover .dropdown-content{ 
+    display:block; 
+}
+
+.contenedor{ 
+    display:flex; 
+    padding:20px; 
+    flex-wrap: wrap;
+}
+
+main{ 
+    width:70%; 
+}
+
+aside{ 
+    width:30%; 
+    text-align:center; 
+}
+
+aside img{ 
+    width:120px; 
+    height:120px; 
+    border-radius:50%; 
+    display:block; 
+    margin:15px auto; 
+}
+
+footer{ 
+    background-color:black;
+    color:white;
+    text-align:center; 
+    padding:15px; 
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    main, aside{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header> 
+    <h1>Collares</h1> 
+    <h3>Collares de calidad</h3> 
+</header>
+<nav> 
+    <a href="index.html">volver</a>
+    <a href="relojes.html">relojes</a> 
+
+    <div class="dropdown"> 
+        <a href="#">Anillos</a> 
+        <div class="dropdown-content">  
+            <a href="oro.html">oro</a>
+            <a href="plata.html">plata</a> 
+            <a href="acero.html">Acero inoxidable</a> 
+            <a href="platino.html">platino</a> 
+            <a href="titanio.html">titanio</a> 
+        </div>
+    </div>
+
+    <a href="pulseras.html">pulseras</a> 
+
+    <a href="aretes.html">Aretes</a>
+
+    <a href="acerca.html">Acerca de</a> 
+
+    <a href="formulario.html">Formulario</a> 
+
+        <a href="galeria.html">Galeria</a> 
+</nav>
+
+
+
+<div class="contenedor"> 
+
+    <main> 
+        <h2>Esta es nuestra seccion de collares</h2> 
+        Aqui podras encontrar los collares que manejamos. 
+        <br><br><hr>
+       tenemos una gran variedad de collares  que te podrian encantar.
+    </main>
+
+    <aside> 
+        <h3>Collares</h3>
+        <img src="c1.jpeg"> 
+
+        <h3></h3>
+        <img src="c2.jpeg">
+
+        <h3></h3>
+        <img src="c3.jpeg">
+
+        <h3></h3>
+        <img src="c4.jpeg">
+
+    </aside>
+
+</div>
+
+<footer> 
+    <p>Gracias por visitar nuestra página de joyeria</p>
+    <p>Esperamos que le haya encantado algun tipo</p>
+        <p>joyas de la elegancia</p>
+</footer>
+
+</body>
+</html>

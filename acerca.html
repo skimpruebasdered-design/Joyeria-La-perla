@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeria la perla </title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:lightblue;
+}
+
+header{
+    background-image: url("fondo.jpeg"); 
+    background-size:cover; 
+    background-position: center; 
+    color:black;
+    text-align:center; 
+    padding:50px 40px; 
+    font-family: comic sans MS;
+}
+
+header h1{
+    font-size:45px;
+    letter-spacing:2px;
+}
+nav{ 
+    background-color:darkblue; 
+    text-align:left; 
+}
+
+nav a{ 
+    color:white; 
+    text-decoration:none; 
+    padding:15px; 
+    display:inline-block; 
+}
+
+nav a:hover{ 
+    background-color:purple; 
+    color:black; 
+}
+
+.dropdown{ 
+    display:inline-block;
+    position:relative; 
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute; 
+    background-color:red; 
+}
+
+.dropdown-content a{ 
+    display:block; 
+}
+
+.dropdown:hover .dropdown-content{ 
+    display:block; 
+}
+
+.contenedor{ 
+    display:flex; 
+    padding:20px; 
+    flex-wrap: wrap;
+}
+
+main{ 
+    width:70%; 
+}
+
+aside{ 
+    width:30%; 
+    text-align:center; 
+}
+
+aside img{ 
+    width:120px; 
+    height:120px; 
+    border-radius:50%; 
+    display:block; 
+    margin:15px auto; 
+}
+
+footer{ 
+    background-color:black;
+    color:white;
+    text-align:center; 
+    padding:15px; 
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    main, aside{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+<header> 
+    <h1>Joyeria La Perla</h1> 
+    <h3>Joyeria de buena calidad</h3> 
+</header>
+<nav> 
+    <a href="relojes.html">relojes</a> 
+    <a href="collares.html">collares</a>
+
+    <div class="dropdown"> 
+        <a href="#">Anillos</a> 
+        <div class="dropdown-content"> 
+            <a href="oro.html">oro</a> 
+            <a href="plata.html">plata</a> 
+            <a href="acero.html">Acero inoxidable</a> 
+            <a href="platino.html">platino</a> 
+            <a href="titanio.html">titanio</a> 
+        </div>
+    </div>
+
+    <a href="pulseras.html">pulseras</a> 
+
+    <a href="aretes.html">Aretes</a>
+
+    <a href="acerca.html">Acerca de</a> 
+
+    <a href="formulario.html">Formulario</a> 
+
+    <a href="galeria.html">Galeria</a>    
+</nav>
+
+<div class="contenedor"> 
+
+    <main> 
+        <h2>Aqui te expicaremos acerca de las joyas </h2> 
+        Bienvenidos a nuestro sitio web dedicado a las joyerias. Aquí encontrarás información sobre algunos de los tipos de joyeria que tenemos. 
+        <br><br><hr>
+         <p>tenemos una gran variedad de joyas que te podrian encantar,las joyas son objetos decorativos que las personas usan principalmente como accesorios.No solo sirven para verse bien, tambien tienen un valor cultural, sentmental y economico.
+Son piezas hechas con materiales como metales preciosos y piedras especiales. Se usan en el cuerpo, por ejemplo:
+Anillos 💍
+Collares 📿
+Pulseras
+Aretes (pendientes)
+🪙 Materiales más comunes
+Las joyas suelen estar hechas de:
+Oro: muy valioso, no se oxida y es duradero
+Plata: más económica, pero elegante
+Platino: muy resistente y caro
+Piedras preciosas como:
+Diamante 💎
+Rubí
+Zafiro
+Esmeralda
+🏺 Historia de las joyas
+Desde la antigüedad, las joyas han sido importantes. Civilizaciones como los egipcios, mayas y romanos las usaban para:
+Mostrar riqueza 💰
+Representar poder 👑
+Como símbolos religiosos
+❤️ Significado
+Las joyas también tienen un valor emocional. Por ejemplo:
+Un anillo puede representar amor o compromiso
+Un collar puede ser un regalo especial
+Algunas se heredan de generación en generación
+✨ Tipos de joyas
+De lujo: hechas con materiales muy caros
+De fantasía: más económicas, hechas con materiales artificiales
+Artesanales: hechas a mano, únicas
+🌟 Curiosidad
+El diamante es una de las piedras más duras del mundo, por eso se usa mucho en anillos.</p>
+        <br><br><hr>
+       
+    </main>
+
+    <aside> 
+        <h3>collar cubano</h3>
+        <img src="cubana.jpeg"> 
+
+        <h3>Rolex</h3>
+        <img src="rolex.jpeg">
+
+        <h3>Anillo de bodas</h3>
+        <img src="anillo.jpeg">
+    </aside>
+
+</div>
+
+<footer> 
+    <p>Gracias por visitar nuestra página de joyeria</p>
+    <p>Esperamos que le haya encantado algun tipo</p>
+        <p>joyas de la elegancia</p>
+</footer>
+
+</body>
+</html>
